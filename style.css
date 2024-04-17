@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 300px;
+  }
+  
+  #countdown {
+    font-size: 100px;
+    color: hsl(244, 100%, 50%); /* Red */
+  }
+  
+  #countdown::after {
+    content: '';
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  
